@@ -1,0 +1,26 @@
+{
+  "name": "css-george-website",
+  "version": "1.0.0",
+  "description": "Website for the CSS-George project",
+  "private": true,
+  "repository": {
+    "type": "git",
+    "url": "https://github.com/css-george/example-site"
+  },
+  "scripts": {
+    "build": "npm run build:html && npm run build:js && npm run build:less",
+    "build:html": "cp src/index.html www/index.html",
+    "build:js": "cp node_modules/css-george/dist/george.js www/george.js",
+    "build:less": "lessc --css-george src/less/main.less www/style.css",
+    "serve": "http-server www",
+    "start": "npm run build && npm run serve"
+  },
+  "author": "Darryl Pogue <darryl@dpogue.ca>",
+  "license": "MIT",
+  "dependencies": {
+    "css-george": "^1.0.0-rc.1",
+    "http-server": "^0.9.0",
+    "less": "^2.7.2",
+    "less-plugin-css-george": "^1.0.0"
+  }
+}
