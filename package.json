@@ -11,7 +11,7 @@
     "build": "npm run build:html && npm run build:js && npm run build:less",
     "build:html": "cp src/index.html www/index.html",
     "build:js": "cp node_modules/css-george/dist/george.js www/george.js",
-    "build:less": "lessc --css-george src/less/main.less www/style.css",
+    "build:less": "lessc src/less/main.less www/style.css",
     "serve": "http-server www",
     "start": "npm run build && npm run serve"
   },
@@ -19,8 +19,8 @@
   "license": "MIT",
   "dependencies": {
     "css-george": "^1.0.0",
-    "http-server": "^0.9.0",
-    "less": "^2.7.2",
-    "less-plugin-css-george": "^1.0.0"
+    "http-server": "^0.11.0",
+    "less": "^3.0.0",
+    "less-plugin-css-george": "^2.0.0"
   }
 }
