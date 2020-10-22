@@ -19,7 +19,7 @@
   "license": "MIT",
   "dependencies": {
     "css-george": "^1.0.0",
-    "http-server": "^0.11.0",
+    "http-server": "^0.12.0",
     "less": "^3.0.0",
     "less-plugin-css-george": "^2.0.0"
   }
