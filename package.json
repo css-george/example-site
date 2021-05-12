@@ -12,15 +12,15 @@
     "build:html": "cp src/index.html www/index.html",
     "build:js": "cp node_modules/css-george/dist/george.js www/george.js",
     "build:less": "lessc src/less/main.less www/style.css",
-    "serve": "http-server www",
+    "serve": "sirv www",
     "start": "npm run build && npm run serve"
   },
   "author": "Darryl Pogue <darryl@dpogue.ca>",
   "license": "MIT",
   "dependencies": {
     "css-george": "^1.0.0",
-    "http-server": "^0.12.0",
-    "less": "^3.0.0",
-    "less-plugin-css-george": "^2.0.0"
+    "less": "^4.1.1",
+    "less-plugin-css-george": "^2.1.0",
+    "sirv-cli": "^1.0.11"
   }
 }
